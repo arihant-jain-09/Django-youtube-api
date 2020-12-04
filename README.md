@@ -4,7 +4,7 @@
 ![alt text](https://img.shields.io/tokei/lines/github/arihant-jain-09/Django-api-hall-of-fame)
 ![alt text](https://img.shields.io/github/repo-size/arihant-jain-09/Django-api-hall-of-fame)
 <p>
-Django API hall-of-fame + Youtube API 
+Django + Youtube API 
 WEBSITE IS DEPLOYED -->> http://arihantjain.pythonanywhere.com/
 
 ![alt text](web%20images/home.png)
