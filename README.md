@@ -1,4 +1,4 @@
-# Django-api-hall-of-fame
+# Django-Youtube-API
 
 ![alt text](https://img.shields.io/github/languages/count/arihant-jain-09/Django-api-hall-of-fame)
 ![alt text](https://img.shields.io/tokei/lines/github/arihant-jain-09/Django-api-hall-of-fame)
