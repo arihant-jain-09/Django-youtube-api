@@ -1,0 +1,34 @@
+{% extends "halls/base.html" %}
+{% block content %}
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Welcome to Hall Of Fame</h1>
+      <h2>Website to share your Hall Of Fame to the World</h2>
+      <a href="{% url 'signup' %}" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero Section -->
+    <br>
+    <h2 class="text-center">Popular Hall Of Fames</h2>
+    {% for hall in popular_halls %}
+    <a href="{% url 'detail_hall' pk=hall.id %}"><h2>{{hall.title}}</h2></a>
+    <div class="row">
+
+      {% for video in hall.video.all %}
+      <div class="col-md-4 mt-3"><div class="card mb-4 shadow-sm">
+          <iframe width="100%" height="225" src="https://www.youtube.com/embed/{{video.youtube_id}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="card-text">{{video.title}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+    <footer id="footer">
+        <div class="container text-center">
+          <a href="{% url 'about' %}"><span style="font-size: 35px;">About the Website<i class="fas fa-address-card"></i></span></a>
+          <br>
+                  <br>
+        </div>
+      </footer><!-- End  Footer -->
+{% endblock %}

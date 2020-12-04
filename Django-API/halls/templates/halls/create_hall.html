@@ -1,0 +1,13 @@
+{% extends "halls/base.html" %}
+{% block content %}
+{% load bootstrap4 %}
+    <div class="container">
+      <h1>Create new Hall Of Fame</h1>
+      <form method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input class="btn btn-primary" type="submit" value="Create Hall">
+      </form>
+
+    </div>
+{% endblock %}

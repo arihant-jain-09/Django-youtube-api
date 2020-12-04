@@ -1,0 +1,89 @@
+{% extends "halls/base.html" %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static "about.css" %}">
+{% endblock %}
+{% block content %}
+
+<!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="{% static 'img/profile-img.png' %}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light">Arihant Jain</h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/arihant.jain.71216/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/arihant_jain_09/" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/arihant-jain-09/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/arihant-jain-09" class="Github"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="{% url 'home' %}"><i class="fas fa-home"></i><span>Home</span></a></li>
+          <li><a href="{% url 'dashboard'%}"><i class="fas fa-columns"></i> <span>Dashboard</span></a></li>
+          </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= About Section ======= -->
+      <section id="about" class="about" >
+        <div class="container">
+
+          <div style="margin-left:200px" class="section-title">
+
+              <span style="font-size: 48px;">About <i class="fas fa-address-card"></i></span>
+              <ul>
+                <li><p>This website uses YouTube API to grab the title, videoID and URL to add videos to Hall Of Fame,</p></li>
+                <li><p>The Website uses Django at Backend, login, sign up are authenticated and protected,</p></li>
+                <li><p>Bootstrap, HTML and CSS are used for the front-end,</p></li>
+                <li><p>The Website uses the PBKDF2 algorithm with a SHA256 hash to store passwords,</p></li>
+              <li><p>The Website uses Font Awesome for icons,</p></li>
+              <li><p>The database has dumped with Json for database recovery.</p></li>
+              <li><p>My YouTube API is functional till 31 Dec 2020 so after that you might not see thumbnails.</p></li>
+              <i class="fas fa-external-link-alt"></i> The website source code is on github <i class="fas fa-link"></i><a href="https://github.com/arihant-jain-09/Django-api-hall-of-fame">@arihant-jain-09</a>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3>Django &amp; Web Development.</h3>
+              <p class="font-italic">
+                Home Page consists of Popular Hall-Of-Fame's added by me.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><strong>Birthday:</strong> --/--/----</li>
+                    <li><strong>City:</strong> Jabalpur, India</li>
+                    <li><strong>Age:</strong> --</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+
+                    <li><strong>College:</strong> IIIT Jabalpur</li>
+                    <li><strong>Degree:</strong> BTech 2023</li>
+                    <li><strong>Email:</strong> example@gmail.com</li>
+
+                  </ul>
+                </div>
+              </div>
+              <p>
+                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End About Section -->
+
+{% endblock %}

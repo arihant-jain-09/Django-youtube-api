@@ -1,0 +1,13 @@
+{% extends "halls/base.html" %}
+{% block content %}
+{% load bootstrap4 %}
+<div class="container">
+  <h2>Login</h2>
+    <form method="post">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <input type="submit" value="Login">
+    </form>
+</div>
+
+{% endblock %}
